@@ -27,7 +27,7 @@ public class WelcomeController {
 	
 	@RequestMapping(value = "/home", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public String home() {
-		String msg = "Welcome to the new " + APP_NAME + " World 2017 Home.";
+		String msg = "Welcome to the new " + APP_NAME + " World 2017 Home.UPDATED";
 		logger.info(msg);
 		return msg;
 	}
