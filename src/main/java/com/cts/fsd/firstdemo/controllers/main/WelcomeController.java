@@ -20,14 +20,14 @@ public class WelcomeController {
 	
 	@RequestMapping(value = "/", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public String welcome() {
-		String msg = "Welcome to the new " + APP_NAME + " World 2017.";
+		String msg = "Welcome to the new " + APP_NAME + " 2017.";
 		logger.info(msg);
 		return msg;
 	}
 	
 	@RequestMapping(value = "/home", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public String home() {
-		String msg = "Welcome to the new " + APP_NAME + " World 2017 Home.UPDATED";
+		String msg = "Welcome to the new " + APP_NAME + " 2017 Home.";
 		logger.info(msg);
 		return msg;
 	}
