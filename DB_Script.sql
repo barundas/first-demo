@@ -38,3 +38,14 @@ CREATE TABLE `policyinfo` (
   `policmaximumeligibilityage` int(11) DEFAULT NULL,
   PRIMARY KEY (`policykey`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Policy master table';
+
+CREATE TABLE `policysubscriptiondetails` (
+  `userkey` int(11) NOT NULL,
+  `policykey` int(11) NOT NULL,
+  `policystartdate` date DEFAULT NULL,
+  `policyenddate` date DEFAULT NULL,
+  `policyPremium` decimal(8,2) DEFAULT NULL,
+  `totalpremiumpaid` decimal(8,2) DEFAULT NULL,
+  `isvalid` tinyint(4) DEFAULT NULL,
+  PRIMARY KEY (`userkey`,`policykey`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
